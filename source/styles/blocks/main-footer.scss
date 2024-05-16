@@ -3,9 +3,67 @@
 }
 
 .main-footer__logo {
+  background-repeat: no-repeat;
+  min-width: 128px;
+  min-height: 24px;
+  transition: al 1.3s;
+  display: block;
+  background-color: #111111;
+  mask-image: url("../../icons/stack.svg#logo-text");
+  mask-size: 128px 24px;
+  mask-repeat: no-repeat;
 
+  &:hover {
+    background-color: #3e3e3e;
+  }
+
+  &:focus {
+    background-color: #3e3e3e;
+  }
+
+  &:active {
+    background-color: #6b6b6b;
+  }
 }
 
 .main-footer__copyright {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #444444;
+  text-decoration: none;
+  position: relative;
 
+  &::after {
+    content: "";
+    mask-image: url("../../icons/stack.svg#html-academy");
+    background-color: #666666;
+    mask-repeat: no-repeat;
+    mask-size: 27px 34px;
+    width: 27px;
+    height: 34px;
+    position: absolute;
+  }
+
+  &:hover {
+    &::after {
+      background-color: #68b738;
+    }
+  }
+
+  &:focus {
+    &::after {
+      background-color: #68b738;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+
+    &::after {
+      background-color: #68b738;
+    }
+  }
 }
