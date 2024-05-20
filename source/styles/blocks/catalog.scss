@@ -1,0 +1,65 @@
+.catalog {
+
+}
+
+.catalog__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  line-height: 36px;
+  color: #000000;
+}
+
+.catalog__product {
+
+}
+
+.catalog__list {
+  list-style-type: none;
+}
+
+.catalog__item {
+
+}
+
+.catalog__link {
+  text-decoration: none;
+}
+
+.catalog__subtitle {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #222222;
+}
+
+.catalog__subtitle--more {
+  &::before {
+    content: "";
+    background-image: url("../../icons/stack.svg#plus-mobile");
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    width: 30px;
+    height: 30px;
+    display: block;
+  }
+}
+
+.catalog__information {
+
+}
+
+.catalog__information-item {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.catalog__item--more {
+
+}
+
+.catalog__text {
+  font-size: 12px;
+  line-height: 16px;
+}
