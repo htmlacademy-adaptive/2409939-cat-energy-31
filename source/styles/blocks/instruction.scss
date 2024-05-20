@@ -14,23 +14,64 @@
 }
 
 .instruction__item {
+  position: relative;
+}
 
+.instruction__item::before {
+  position: absolute;
+  content: "";
+  width: 60px;
+  height: 60px;
+  background-color: #68b738;
+  display: block;
 }
 
 .instruction__item--leaf {
+  position: relative;
+}
 
+.instruction__item--leaf::before {
+  position: absolute;
+  background-image: url("../../icons/stack.svg#icon-leaf");
+  background-repeat: no-repeat;
+  background-size: 30px 32px;
+  background-position: center;
 }
 
 .instruction__item--powder {
+  position: relative;
+}
 
+.instruction__item--powder::before {
+  position: absolute;
+  background-image: url("../../icons/stack.svg#icon-powder");
+  background-repeat: no-repeat;
+  background-size: 25.98px 28.51px;
+  background-position: center;
 }
 
 .instruction__item--eat {
+  position: relative;
+}
 
+.instruction__item--eat::before {
+  position: absolute;
+  background-image: url("../../icons/stack.svg#icon-eat");
+  background-repeat: no-repeat;
+  background-size: 25px 30px;
+  background-position: center;
 }
 
 .instruction__item--clock {
+  position: relative;
+}
 
+.instruction__item--clock::before {
+  position: absolute;
+  background-image: url("../../icons/stack.svg#icon-clock");
+  background-repeat: no-repeat;
+  background-size: 26.09px 31px;
+  background-position: center;
 }
 
 .instruction__text {

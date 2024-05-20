@@ -34,6 +34,18 @@
   color: #222222;
 }
 
+.catalog__subtitle--more {
+  &::before {
+    content: "";
+    background-image: url("../../icons/stack.svg#plus-mobile");
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    width: 30px;
+    height: 30px;
+    display: block;
+  }
+}
+
 .catalog__information {
 
 }
