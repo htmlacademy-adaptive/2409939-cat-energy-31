@@ -3,7 +3,10 @@
 }
 
 .additional-products__wrapper {
-
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .additional-products__title {
@@ -15,10 +18,22 @@
 
 .additional-products__list {
   list-style-type: none;
+
+  @media (min-width: $desktop-width) {
+    width: 900px;
+  }
 }
 
 .additional-products__item {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
 }
 
 .additional-products__subtitle {
@@ -28,9 +43,50 @@
   text-transform: uppercase;
   color: #222222;
   text-decoration: none;
+
+  @media (min-width: $desktop-width) {
+    width: 200px;
+  }
 }
 
 .additional-products__text {
   font-size: 14px;
   line-height: 14px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.additional-products__gift {
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 200px;
+  }
+}
+
+.additional-products__gift-text {
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  text-align: center;
+  //временно для видимости текста
+  background-color: $bg-base-green;
+
+  @media (min-width: $tablet-width) and (max-width: 1439px) {
+    display: flex;
+    align-items: center;
+  }
+
+  &::before {
+    content: "";
+    background-image: url("../../icons/stack.svg#icon-gift");
+    background-repeat: no-repeat;
+    background-size: 78px 80.03px;
+    width: 78px;
+    height: 80.03px;
+    display: block;
+    margin: 0 auto;
+  }
 }

@@ -1,24 +1,15 @@
 .main-nav {
-
-}
-
-.main-nav__toggle {
-  background-image: url("../../icons/stack.svg#menu-burger");
-  background-color: #ffffff;
-  background-repeat: no-repeat;
-  background-size: 24px 24px;
-  cursor: pointer;
-  border: none;
-  width: 24px;
-  height: 24px;
-}
-
-.main-nav__toggle--close {
-  background-image: url("../../icons/stack.svg#menu-close");
 }
 
 .main-nav__list {
+  margin: 0;
+  padding: 0;
   list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .main-nav__item {
@@ -37,6 +28,10 @@
 .main-nav__link {
   text-decoration: none;
   color: #000000;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 18px;
+  }
 
   &:hover {
     opacity: 0.6;

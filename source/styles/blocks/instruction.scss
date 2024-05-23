@@ -11,6 +11,16 @@
 
 .instruction__list {
   list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 37px 137px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
 }
 
 .instruction__item {
@@ -24,6 +34,11 @@
   height: 60px;
   background-color: #68b738;
   display: block;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+  }
 }
 
 .instruction__item--leaf {

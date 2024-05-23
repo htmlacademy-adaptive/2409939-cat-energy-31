@@ -9,6 +9,13 @@
   color: #000000;
 }
 
+.example__container {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 .example__background {
 
 }
@@ -17,8 +24,16 @@
 
 }
 
+@media (min-width: $tablet-width) and (max-width: 1439px) {
+  .example__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .example__list {
   list-style-type: none;
+  display: flex;
 }
 
 .example__item {
@@ -37,7 +52,9 @@
 }
 
 .example__expenses {
-
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
 }
 
 .example__price {

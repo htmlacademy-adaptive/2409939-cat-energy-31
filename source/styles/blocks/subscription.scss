@@ -18,14 +18,26 @@
   font-size: 16px;
   line-height: 24px;
   color: #000000;
+  text-align: center;
 }
 
-.subscription__form {
 
+.subscription__form {
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    margin: 0 auto;
+  }
 }
 
 .subscription__field {
   font-family: "Oswald", sans-serif;
   font-size: 20px;
   line-height: 30px;
+  width: 100%;
 }
