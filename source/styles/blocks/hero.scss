@@ -4,7 +4,12 @@
   }
 
   @media (min-width: $desktop-width) {
-    height: 700px;
+    position: relative;
+    display: block;
+    min-height: 694px;
+    background-image: url("../../images/index-background-desktop@2x.jpeg");
+    background-repeat: no-repeat;
+    background-position: right;
   }
 }
 
