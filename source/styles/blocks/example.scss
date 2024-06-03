@@ -1,5 +1,22 @@
 .example {
+  background-color: #f2f2f2;
 
+  @media (min-width: $tablet-width) {
+    border-top: 1px solid #d9d9d9;
+    background: linear-gradient(to top, #f2f2f2 42.7%, #ffffff 30%);
+  }
+
+  @media (min-width: $desktop-width) {
+    border: none;
+    background: none;
+    margin-top: 69px;
+  }
+}
+
+.example__background {
+  @media (min-width: $desktop-width) {
+    background-color: #f2f2f2;
+  }
 }
 
 .example__title {
@@ -7,6 +24,10 @@
   font-size: 36px;
   line-height: 40px;
   color: #000000;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 76px;
+  }
 }
 
 .example__container {
@@ -14,14 +35,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-}
-
-.example__background {
-
-}
-
-.example__text {
-
 }
 
 @media (min-width: $tablet-width) and (max-width: 1439px) {
@@ -34,10 +47,32 @@
 .example__list {
   list-style-type: none;
   display: flex;
+  justify-content: space-between;
+  padding: 0;
+  width: 100%;
+  max-width: 365px;
 }
 
 .example__item {
+  max-width: 124px;
+  width: 100%;
+  padding: 15px 10px 5px;
+  text-align: center;
+  border: 1px solid #d9d9d9;
+  border-radius: 5px;
+}
 
+.example__item-wrapper {
+  max-width: 105px;
+  padding: 0 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: -20px;
+  background-color: #f2f2f2;
+
+  @media (min-width: $tablet-width) and (max-width: 1439px) {
+    background-color: #ffffff;
+  }
 }
 
 .example__result {
@@ -45,15 +80,25 @@
   font-size: 24px;
   line-height: 24px;
   color: #000000;
+  margin: 0;
 }
 
 .example__subtitle {
-
+  line-height: 1;
+  margin: 8px 0 0;
 }
 
 .example__expenses {
+  display: flex;
+  justify-content: center;
+
+  @media (min-width: $tablet-width) and (max-width: 1439px) {
+    display: block;
+  }
+
   @media (min-width: $desktop-width) {
-    display: flex;
+    max-width: 327px;
+    justify-content: space-between;
   }
 }
 
@@ -67,8 +112,37 @@
 
 .example__slider-comparison {
   position: relative;
+  display: flex;
+  max-width: 280px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 560px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -135px;
+  }
 }
 
-.example__before {
+.example__wrap {
+  width: 50%;
+}
 
+.example__image {
+  width: 100%;
+  height: 256px;
+  object-fit: cover;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    height: 512px;
+  }
+}
+
+.example__image--before {
+  object-position: left;
+}
+
+.example__image--after {
+  object-position: right;
 }

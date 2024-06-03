@@ -1,7 +1,3 @@
-.instruction {
-
-}
-
 .instruction__title {
   font-family: "Oswald", sans-serif;
   font-size: 36px;
@@ -11,6 +7,7 @@
 
 .instruction__list {
   list-style-type: none;
+  counter-reset: section;
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -25,6 +22,10 @@
 
 .instruction__item {
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    min-height: 230px;
+  }
 }
 
 .instruction__item::before {
@@ -90,5 +91,18 @@
 }
 
 .instruction__text {
-
+  &::after {
+    @media (min-width: $tablet-width) {
+      counter-increment: section;
+      content: counter(section) "";
+      position: absolute;
+      left: 140px;
+      top: -38px;
+      font-size: 280px;
+      line-height: 1;
+      font-family: "Oswald", sans-serif;
+      color: #f2f2f2;
+      z-index: -1;
+    }
+  }
 }

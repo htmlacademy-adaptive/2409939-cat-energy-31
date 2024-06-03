@@ -34,10 +34,13 @@
 }
 
 .button--hero {
+  padding: 10px 0;
+
   @media (min-width: $tablet-width) and (max-width: 1439px) {
     width: 250px;
     position: absolute;
     top: 230px;
+    padding: 14px 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -69,6 +72,13 @@
     mask-size: 32px 10px;
     width: 32px;
     height: 10px;
+    top: 7px;
+    left: 98px;
+
+    @media (min-width: $tablet-width) {
+      top: 10px;
+      left: 126px;
+    }
   }
 
   &:hover {
@@ -113,10 +123,10 @@
   width: 4px;
   height: 100%;
   padding: 0;
-  display: block;
+  display: inline-block;
   position: absolute;
   top: 0;
-  left: -2px;
+  left: calc(50% - 2px);
 
   &::before {
     content: "";

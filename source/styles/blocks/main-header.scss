@@ -2,7 +2,14 @@
   color: #000000;
   display: flex;
   flex-direction: row;
+  border-bottom: 1px solid #e6e6e6;
 
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+}
+
+.main-header--image {
   @media (min-width: $desktop-width) {
     position: absolute;
     width: 100%;
@@ -16,14 +23,6 @@
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
-
-  @media (min-width: $tablet-width) {
-
-  }
-
-  @media (min-width: $desktop-width) {
-
-  }
 }
 
 .main-header__wrapper {
