@@ -3,18 +3,15 @@
 @import "./common/mixins.scss";
 @import "./common/fonts.scss";
 @import "./common/global.scss";
-@import "./common/container.scss";
 @import "./common/visually-hidden.scss";
 @import "./common/button.scss";
 
 /* BLOCKS */
-@import "./blocks/header.scss";
 @import "./blocks/main-footer.scss";
 @import "./blocks/social.scss";
-@import "./blocks/page.scss";
 @import "./blocks/main-header.scss";
 @import "./blocks/main-nav.scss";
-@import "./blocks/main-conteiner.scss";
+@import "./blocks/main-container.scss";
 @import "./blocks/hero.scss";
 @import "./blocks/programs.scss";
 @import "./blocks/type-programs.scss";
@@ -23,6 +20,4 @@
 @import "./blocks/contacts.scss";
 @import "./blocks/catalog.scss";
 @import "./blocks/additional-products.scss";
-@import "./blocks/gift.scss";
 @import "./blocks/subscription.scss";
-

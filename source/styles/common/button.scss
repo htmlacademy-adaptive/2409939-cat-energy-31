@@ -11,6 +11,17 @@
 
 .button--color {
   background-color: $bg-base-green;
+  width: 100%;
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+  }
 
   &:hover {
     background-color: #5eaa2f;
@@ -19,6 +30,23 @@
   &:active {
     background-color: #5eaa2f;
     color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.button--hero {
+  padding: 10px 0;
+
+  @media (min-width: $tablet-width) and (max-width: 1439px) {
+    width: 246px;
+    position: absolute;
+    top: 230px;
+    padding: 14px 0;
+    margin-top: 64px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 244px;
+    padding: 14px 0;
   }
 }
 
@@ -31,6 +59,11 @@
   cursor: pointer;
   position: relative;
 
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
   &::after {
     content: "";
     cursor: pointer;
@@ -41,6 +74,16 @@
     mask-size: 32px 10px;
     width: 32px;
     height: 10px;
+    top: 7px;
+    left: 102px;
+
+    @media (min-width: $tablet-width) {
+      mask-size: 37px 12px;
+      width: 37px;
+      height: 12px;
+      top: 9px;
+      left: 131px;
+    }
   }
 
   &:hover {
@@ -58,12 +101,43 @@
   }
 }
 
+.button--card {
+  margin-top: 20px;
+  padding: 10px 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 33px;
+  }
+}
+
 .button--more {
   color: $base-color-text;
   background-color: #f2f2f2;
+  width: 100%;
+  display: block;
+  padding: 10px 0;
 
-  &:hover, &:active {
+  &:hover,
+  &:active {
     background-color: #ebebeb;
+  }
+}
+
+.button--additional-products {
+  padding: 10px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 10px 0;
+    margin-top: 26px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    padding: 10px 91px;
   }
 }
 
@@ -71,6 +145,17 @@
   font-size: 20px;
   line-height: 26px;
   border: none;
+  display: inline;
+  margin-top: 16px;
+  padding: 15px 0;
+
+  @media (min-width: $tablet-width) {
+    width: 445px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 390px;
+  }
 }
 
 .example__button {
@@ -81,22 +166,22 @@
   width: 4px;
   height: 100%;
   padding: 0;
-  display: block;
+  display: inline-block;
   position: absolute;
   top: 0;
-  left: -2px;
+  left: calc(50% - 2px);
 
   &::before {
     content: "";
     background-color: #ffffff;
     border: 2px solid #666666;
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
+    width: 36px;
+    height: 36px;
     position: absolute;
-    top: 50%;
+    top: 49%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -42%);
   }
 
   &::after {
@@ -105,7 +190,7 @@
     width: 24px;
     height: 18px;
     position: absolute;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -61%);
     mask-image: url("../../icons/stack.svg#arrow-slider");
     mask-position: 50%;
     mask-size: 24px 18px;

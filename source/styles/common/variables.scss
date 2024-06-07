@@ -1,5 +1,10 @@
 /* здесь используйте глобальные переменные */
-$base-color-text: #444444;
 
+// Colors
+$base-color-text: #444444;
 $bg-base-green: #68b738;
 
+// Viewports
+$tablet-width: 768px;
+$desktop-width: 1440px;
+$mobile-width-only: 767px;

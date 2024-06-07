@@ -1,13 +1,28 @@
 .social {
-
+  margin: 0 auto;
 }
 
 .social__list {
+  display: flex;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+  justify-content: center;
+  margin: 19px 0 27px;
+  padding: 20px 0 13px;
+  align-items: center;
 
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    border: none;
+    padding: 0;
+    margin-left: 37px;
+    padding-top: 4px;
+  }
 }
 
 .social__item {
   list-style-type: none;
+  margin: 0 12px;
 }
 
 .social__link {
