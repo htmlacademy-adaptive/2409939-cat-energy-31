@@ -50,6 +50,7 @@
   color: #444444;
   text-decoration: none;
   position: relative;
+
   display: block;
 
   @media (min-width: $tablet-width) {
@@ -69,6 +70,7 @@
     width: 27px;
     height: 34px;
     position: absolute;
+
     right: 0;
     top: -7px;
 
