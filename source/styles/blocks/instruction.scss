@@ -1,0 +1,142 @@
+.instruction {
+  margin-bottom: 53px;
+}
+
+.instruction__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  line-height: 38px;
+  margin: 0 0 43px;
+  color: #000000;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin: 44px 0 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 76px 0 69px;
+    line-height: 60px;
+  }
+}
+
+.instruction__list {
+  list-style-type: none;
+  counter-reset: section;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 87px 61px;
+    padding: 0;
+    margin-bottom: 58px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    gap: 79px;
+  }
+}
+
+.instruction__item {
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    min-height: 230px;
+  }
+}
+
+.instruction__item::before {
+  position: absolute;
+  content: "";
+  width: 60px;
+  height: 60px;
+  background-color: #68b738;
+  display: block;
+  top: -2px;
+  left: -40px;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+    top: 2px;
+    left: 0;
+  }
+}
+
+.instruction__item--leaf {
+  position: relative;
+}
+
+.instruction__item--leaf::before {
+  position: absolute;
+  background-image: url("../../icons/stack.svg#icon-leaf");
+  background-repeat: no-repeat;
+  background-size: 30px 32px;
+  background-position: center;
+}
+
+.instruction__item--powder {
+  position: relative;
+}
+
+.instruction__item--powder::before {
+  position: absolute;
+  background-image: url("../../icons/stack.svg#icon-powder");
+  background-repeat: no-repeat;
+  background-size: 25.98px 28.51px;
+  background-position: center;
+}
+
+.instruction__item--eat {
+  position: relative;
+}
+
+.instruction__item--eat::before {
+  position: absolute;
+  background-image: url("../../icons/stack.svg#icon-eat");
+  background-repeat: no-repeat;
+  background-size: 25px 30px;
+  background-position: center;
+}
+
+.instruction__item--clock {
+  position: relative;
+}
+
+.instruction__item--clock::before {
+  position: absolute;
+  background-image: url("../../icons/stack.svg#icon-clock");
+  background-repeat: no-repeat;
+  background-size: 26.09px 31px;
+  background-position: center;
+}
+
+.instruction__text {
+  margin: 0 0 26px 40px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 0;
+    padding-top: 113px;
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 267px;
+  }
+
+  &::after {
+    @media (min-width: $tablet-width) {
+      counter-increment: section;
+      content: counter(section) "";
+      position: absolute;
+      top: -38px;
+      left: 112px;
+      font-size: 280px;
+      line-height: 1;
+      font-family: "Oswald", sans-serif;
+      color: #f2f2f2;
+      z-index: -1;
+    }
+  }
+}

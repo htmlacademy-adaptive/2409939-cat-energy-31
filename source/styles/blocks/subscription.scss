@@ -1,0 +1,107 @@
+.subscription__wrapper {
+  padding: 0;
+  margin-bottom: 39px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 103px;
+  }
+}
+
+.subscription__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  margin: 40px -20px 32px 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 32px;
+    line-height: 32px;
+    margin: 0 -30px 66px -43px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 40px;
+    line-height: 40px;
+    margin: 0 -110px 73px;
+  }
+
+  &::after {
+    content: "";
+    height: 2px;
+    background-color: #68b738;
+    flex: 1;
+    margin-left: 41px;
+  }
+
+  &::before {
+    @media (min-width: $tablet-width) {
+      content: "";
+      background-color: #68b738;
+      width: 43px;
+      height: 2px;
+      margin-right: 40px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 70px;
+    }
+  }
+}
+
+.subscription__text {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  text-align: center;
+  margin: 0 auto 24px;
+  max-width: 283px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 32px;
+    max-width: 523px;
+    margin: 0 auto 8px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: none;
+  }
+}
+
+
+.subscription__form {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    margin: 0 38px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    width: 750px;
+    justify-content: center;
+    margin: 0 auto;
+  }
+}
+
+.subscription__field {
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  width: 100%;
+  padding: 11px;
+  text-transform: uppercase;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 16px;
+    border: 1px solid #cdcdcd;
+  }
+}

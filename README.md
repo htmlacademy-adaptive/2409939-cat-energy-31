@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Яна Галиаскерова](https://up.htmlacademy.ru/adaptive/31/user/2409939).
-* Наставник: `Неизвестно`.
+* Наставник: [Владислав Ермолаев](https://htmlacademy.ru/profile/yermolayev).
 
 ---
 
