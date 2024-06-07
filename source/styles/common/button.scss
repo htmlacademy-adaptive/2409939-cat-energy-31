@@ -37,14 +37,16 @@
   padding: 10px 0;
 
   @media (min-width: $tablet-width) and (max-width: 1439px) {
-    width: 250px;
+    width: 246px;
     position: absolute;
     top: 230px;
     padding: 14px 0;
+    margin-top: 64px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 250px;
+    width: 244px;
+    padding: 14px 0;
   }
 }
 
@@ -73,11 +75,14 @@
     width: 32px;
     height: 10px;
     top: 7px;
-    left: 98px;
+    left: 102px;
 
     @media (min-width: $tablet-width) {
-      top: 10px;
-      left: 126px;
+      mask-size: 37px 12px;
+      width: 37px;
+      height: 12px;
+      top: 9px;
+      left: 131px;
     }
   }
 
@@ -96,15 +101,43 @@
   }
 }
 
+.button--card {
+  margin-top: 20px;
+  padding: 10px 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 33px;
+  }
+}
+
 .button--more {
   color: $base-color-text;
   background-color: #f2f2f2;
   width: 100%;
   display: block;
+  padding: 10px 0;
 
   &:hover,
   &:active {
     background-color: #ebebeb;
+  }
+}
+
+.button--additional-products {
+  padding: 10px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 10px 0;
+    margin-top: 26px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    padding: 10px 91px;
   }
 }
 
@@ -113,6 +146,16 @@
   line-height: 26px;
   border: none;
   display: inline;
+  margin-top: 16px;
+  padding: 15px 0;
+
+  @media (min-width: $tablet-width) {
+    width: 445px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 390px;
+  }
 }
 
 .example__button {
@@ -133,12 +176,12 @@
     background-color: #ffffff;
     border: 2px solid #666666;
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
+    width: 36px;
+    height: 36px;
     position: absolute;
-    top: 50%;
+    top: 49%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -42%);
   }
 
   &::after {
@@ -147,7 +190,7 @@
     width: 24px;
     height: 18px;
     position: absolute;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -61%);
     mask-image: url("../../icons/stack.svg#arrow-slider");
     mask-position: 50%;
     mask-size: 24px 18px;
@@ -177,23 +220,4 @@
       border-color: #5eaa2f;
     }
   }
-}
-
-.main-header__toggle {
-  background-image: url("../../icons/stack.svg#menu-burger");
-  background-color: #ffffff;
-  background-repeat: no-repeat;
-  background-size: 24px 24px;
-  cursor: pointer;
-  border: none;
-  width: 24px;
-  height: 24px;
-
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-}
-
-.main-header__toggle--close {
-  background-image: url("../../icons/stack.svg#menu-close");
 }

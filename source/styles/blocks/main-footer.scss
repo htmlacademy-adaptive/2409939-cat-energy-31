@@ -1,8 +1,15 @@
 .main-footer__container {
   background-color: #f2f2f2;
+  padding: 40px 20px;
 
   @media (min-width: $tablet-width) {
     display: flex;
+    padding: 60px 31px;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 68px 110px;
   }
 }
 
@@ -45,6 +52,14 @@
   position: relative;
   display: block;
 
+  @media (min-width: $tablet-width) {
+    padding-right: 48px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 50px;
+  }
+
   &::after {
     content: "";
     mask-image: url("../../icons/stack.svg#html-academy");
@@ -55,6 +70,15 @@
     height: 34px;
     position: absolute;
     right: 0;
+    top: -7px;
+
+    @media (min-width: $tablet-width) {
+      right: -2px;
+    }
+
+    @media (min-width: $desktop-width) {
+      right: 0;
+    }
   }
 
   &:hover {

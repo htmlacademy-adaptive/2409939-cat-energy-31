@@ -1,21 +1,29 @@
 .example {
   background-color: #f2f2f2;
+  padding: 0 20px 36px;
+  margin-left: -20px;
+  margin-right: -20px;
 
   @media (min-width: $tablet-width) {
     border-top: 1px solid #d9d9d9;
-    background: linear-gradient(to top, #f2f2f2 42.7%, #ffffff 30%);
+    background: linear-gradient(to top, #eaeaea 42.7%, #ffffff 30%);
+    margin: 0 -30px;
+    padding: 0 30px 97px;
   }
 
   @media (min-width: $desktop-width) {
     border: none;
     background: none;
     margin-top: 69px;
+    padding-bottom: 0;
   }
 }
 
 .example__background {
   @media (min-width: $desktop-width) {
     background-color: #f2f2f2;
+    margin: 0 -110px;
+    padding: 0 110px 75px;
   }
 }
 
@@ -24,9 +32,19 @@
   font-size: 36px;
   line-height: 40px;
   color: #000000;
+  margin: 0;
+  padding-top: 25px;
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin: 45px 0 61px;
+    padding: 0;
+  }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 76px;
+    margin: 80px 0;
   }
 }
 
@@ -34,6 +52,7 @@
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 100px;
   }
 }
 
@@ -41,6 +60,25 @@
   .example__wrapper {
     display: flex;
     justify-content: space-between;
+    align-items: start;
+    margin-bottom: 100px;
+  }
+}
+
+.example__text {
+  margin: 0;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 432px;
+    margin-bottom: 68px;
+    margin-top: 67px;
   }
 }
 
@@ -51,27 +89,28 @@
   padding: 0;
   width: 100%;
   max-width: 365px;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 58px;
+  }
 }
 
 .example__item {
   max-width: 124px;
   width: 100%;
-  padding: 15px 10px 5px;
   text-align: center;
-  border: 1px solid #d9d9d9;
   border-radius: 5px;
-}
 
-.example__item-wrapper {
-  max-width: 105px;
-  padding: 0 10px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: -20px;
-  background-color: #f2f2f2;
-
-  @media (min-width: $tablet-width) and (max-width: 1439px) {
-    background-color: #ffffff;
+  @media (min-width: $tablet-width) {
+    width: auto;
+    max-width: none;
+    margin-right: 43px;
+    align-items: center;
   }
 }
 
@@ -81,11 +120,37 @@
   line-height: 24px;
   color: #000000;
   margin: 0;
+  text-transform: uppercase;
+  border: 1px solid #d9d9d9;
+  border-radius: 5px;
+  padding: 14px 0 15px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+    padding: 15px 0;
+    width: 160px;
+  }
 }
 
 .example__subtitle {
+  margin: -8px 22px 0;
+  font-size: 12px;
   line-height: 1;
-  margin: 8px 0 0;
+  background-color: #f2f2f2;
+
+  @media (min-width: $tablet-width) {
+    background-color: #ffffff;
+    padding: 0;
+    margin: 0 10px;
+    margin-top: -0.4em;
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: #f2f2f2;
+  }
 }
 
 .example__expenses {
@@ -108,6 +173,21 @@
   line-height: 20px;
   text-transform: uppercase;
   color: #000000;
+  margin: 0;
+  margin-top: 19px;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    font-size: 20px;
+    line-height: 18px;
+    margin-top: 12px;
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
 }
 
 .example__slider-comparison {
@@ -117,15 +197,30 @@
 
   @media (min-width: $tablet-width) {
     max-width: 560px;
+    margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: -135px;
+    margin-top: -139px;
   }
 }
 
 .example__wrap {
+  display: flex;
+  overflow: hidden;
   width: 50%;
+
+  picture {
+    flex-shrink: 0;
+    width: 200%;
+  }
+}
+
+.example__wrap--after {
+  position: absolute;
+  right: 0;
+  top: 0;
+  justify-content: flex-end;
 }
 
 .example__image {
